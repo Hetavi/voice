@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)http://demos.jquerymobile.com/1.4.0/pages-multi-page/index.html -->
+<html class="ui-mobile">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <!--<base href="http://demos.jquerymobile.com/1.4.0/pages-multi-page/index.html">-->
+      <base href=".">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>SMJV sports</title>
+      <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+      <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+      <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+      <style>
+         ab{ font-size: 0.1px;
+         display:none;
+         //visibility: hidden;
+         }
+         th { border-bottom: 1px solid #d6d6d6;
+         }
+         tr:nth-child(even) {
+         background: #e9e9e9;
+         }
+         .win {
+         color: #55CC40;
+         }
+         .lost {
+         color: #F50705;
+         }
+      </style>
+   </head>
+   >
+   <body>
+      <div data-role="page" id="one">
+         <a href="mjv1.html" rel="external" class="ui-btn ">Back to Home page</a>
+         <form>
+            <input data-type="search" placeholder="Search...Game, Team..." style="width=80%;" id="searchForCollapsibleSetChildren">
+         </form>
+         <div data-role="collapsibleset" data-filter="true"  data-children="&gt; div, &gt; div div ul li" data-inset="true" id="collapsiblesetForFilterChildren" data-input="#searchForCollapsibleSetChildren">
+            <div data-role="collapsible"  data-mini="true" >
+               <h6>  <i>Badminton 1:</i> 	<span class="win">Sandhurst Shooters </span> VS  
+                  <span class="lost">Pune Panthers</span> 
+               </h6>
+               result <br>more lines
+            </div>
+            <div data-role="collapsible"  data-mini="true" >
+               <h6><i>Badminton 2: Ahmedabad Armours VS Vadodara Vikings</i></h6>
+               result
+            </div>
+            <div data-role="collapsible"  data-mini="true" >
+               <h6><i>Badminton 3:Udaipur Ultimates VS Bhavnagar Blasters</i></h6>
+               result
+            </div>
+            <div data-role="collapsible"  data-mini="true" >
+               <h6><i>Badminton 4:Andheri VS Vadodara Vikings</i></h6>
+               result
+            </div>
+            <div data-role="collapsible"  data-mini="true" >
+               <h6><i>Badminton semi-1:</i></h6>
+               result
+            </div>
+            <div data-role="collapsible"  data-mini="true" >
+               <h6><i>Badminton semi-2:</i></h6>
+               result
+            </div>
+            <div data-role="collapsible"  data-mini="true" >
+               <h6><i>Badminton Final:</i></h6>
+               result
+            </div>
+            <div data-role="collapsible"  data-mini="true" >
+               <h6><i>CARROM 1:AndheriVS Ahmedabad Armours</i></h6>
+               result
+            </div>
+            <div data-role="collapsible"  data-mini="true" >
+               <h6><i>CARROM 2:Sandhurst ShootersVS Udaipur Ultimates</i></h6>
+               result
+            </div>
+            <div data-role="collapsible"  data-mini="true" >
+               <h6><i>CARROM 3: Bhavnagar Blasters  VS  Pune Panthers </i></h6>
+               result
+            </div>
+            <div data-role="collapsible"  data-mini="true" >
+               <h6><i>CARROM 4: Victorious Vallabhs  VS Vadodara Vikings</i></h6>
+               result
+            </div>
+            <div data-role="collapsible"  data-mini="true" >
+               <h6><i>CARROM semi-1:</i></h6>
+               result
+            </div>
+            <div data-role="collapsible"  data-mini="true" >
+               <h6><i>CARROM semi-2:</i></h6>
+               result
+            </div>
+            <div data-role="collapsible"  data-mini="true" >
+               <h6><i>CARROM Final:</i></h6>
+               result
+            </div>
+            <div data-role="collapsible"  data-mini="true" >
+               <h6><i>CHESS 1: Ahmedabad ArmoursVS Udaipur Ultimates</i></h6>
+               result
+            </div>
+            <div data-role="collapsible"  data-mini="true" >
+               <h6><i>CHESS 2: Victorious Vallabhs  VS Bhavnagar Blasters</i></h6>
+               result
+            </div>
+            <div data-role="collapsible"  data-mini="true" >
+               <h6><i>CHESS 3:AndheriVS Sandhurst Shooters</i></h6>
+               result
+            </div>
+            <div data-role="collapsible"  data-mini="true" >
+               <h6><i>CHESS 4:Vadodara Vikings VS  Pune Panthers </i></h6>
+               result
+            </div>
+            <div data-role="collapsible"  data-mini="true" >
+               <h6><i>CHESS semi-1:</i></h6>
+               result
+            </div>
+            <div data-role="collapsible"  data-mini="true" >
+               <h6><i>CHESS semi-2:</i></h6>
+               result
+            </div>
+            <div data-role="collapsible"  data-mini="true" >
+               <h6><i>CHESS Final:</i></h6>
+               result
+            </div>
+            <div data-role="collapsible"  data-mini="true" >
+               <h6><i>CRICKET 1: Ahmedabad ArmoursVS Sandhurst Shooters</i></h6>
+               result
+            </div>
+            <div data-role="collapsible"  data-mini="true" >
+               <h6><i>CRICKET 2:AndheriVS Udaipur Ultimates</i></h6>
+               result
+            </div>
+            <div data-role="collapsible"  data-mini="true" >
+               <h6><i>CRICKET 3: Victorious Vallabhs  VS  Pune Panthers </i></h6>
+               result
+            </div>
+            <div data-role="collapsible"  data-mini="true" >
+               <h6><i>CRICKET 4:Vadodara Vikings VS Bhavnagar Blasters</i></h6>
+               result
+            </div>
+            <div data-role="collapsible"  data-mini="true" >
+               <h6><i>CRICKET semi-1:</i></h6>
+               result
+            </div>
+            <div data-role="collapsible"  data-mini="true" >
+               <h6><i>CRICKET semi-2:</i></h6>
+               result
+            </div>
+            <div data-role="collapsible"  data-mini="true" >
+               <h6><i>CRICKET Final:</i></h6>
+               result
+            </div>
+            <div data-role="collapsible"  data-mini="true" >
+               <h6><i>TABLE TENNIS 1:Andheri VS  Pune Panthers </i></h6>
+               result
+            </div>
+            <div data-role="collapsible"  data-mini="true" >
+               <h6><i>TABLE TENNIS 2:Sandhurst Shooters VS Vadodara Vikings</i></h6>
+               result
+            </div>
+            <div data-role="collapsible"  data-mini="true" >
+               <h6><i>TABLE TENNIS 3:Udaipur Ultimates VS Vadodara Vikings</i></h6>
+               result
+            </div>
+            <div data-role="collapsible"  data-mini="true" >
+               <h6><i>TABLE TENNIS 4: Ahmedabad Armours VS Bhavnagar Blasters</i></h6>
+               result
+            </div>
+            <div data-role="collapsible"  data-mini="true" >
+               <h6><i>TABLE TENNIS semi-1:</i></h6>
+               result
+            </div>
+            <div data-role="collapsible"  data-mini="true" >
+               <h6><i>TABLE TENNIS semi-2:</i></h6>
+               result
+            </div>
+            <div data-role="collapsible"  data-mini="true" >
+               <h6><i>TABLE TENNIS Final:</i></h6>
+               result
+            </div>
+            <div data-role="collapsible"  data-mini="true" >
+               <h6><i>VOLLEYBALL 1:Sandhurst Shooters VS Bhavnagar Blasters</i></h6>
+               result
+            </div>
+            <div data-role="collapsible"  data-mini="true" >
+               <h6><i>VOLLEYBALL 2:Andheri VS Vadodara Vikings</i></h6>
+               result
+            </div>
+            <div data-role="collapsible"  data-mini="true" >
+               <h6><i>VOLLEYBALL 3: Ahmedabad Armours VS Vadodara Vikings</i></h6>
+               result
+            </div>
+            <div data-role="collapsible"  data-mini="true" >
+               <h6><i>VOLLEYBALL 4:Udaipur Ultimates VS  Pune Panthers </i></h6>
+               result
+            </div>
+            <div data-role="collapsible"  data-mini="true" >
+               <h6><i>VOLLEYBALL semi-1:</i></h6>
+               result
+            </div>
+            <div data-role="collapsible"  data-mini="true" >
+               <h6><i>VOLLEYBALL semi-2:</i></h6>
+               result
+            </div>
+            <div data-role="collapsible"  data-mini="true" >
+               <h6><i>VOLLEYBALL Final:</i></h6>
+               result
+            </div>
+         </div>
+      </div>
+      <div data-role="page" id="p2">
+      page 2
+      <div>
+      <script>
+         $('td:nth-child(2)').on('click', function(){
+             var i = $(this).text();
+         	
+         	var ii=i.split("-",1);
+         	document.getElementById("a1").innerHTML =ii
+         	 $('.pop1').show(); 
+         });
+         
+         
+         $(window).load(function () {   
+             $('.pop1').click(function(){
+                 $('.pop1').hide();
+         		});  
+         		divas();
+         		myFunction1();  
+         	
+               	
+         });
+         
+               function divas() { 
+               			var d = new Date();
+               			var weekday = new Array(8);
+               			weekday[0] = " ";
+               			weekday[1] = "MON";
+               			weekday[2] = "TUE";
+               			weekday[3] = "WED";
+               			weekday[4] = "THU";
+               			weekday[5] = "FRI";
+               			weekday[6] = "SAT";
+         				weekday[7] = "ALL";
+               			var n1 = weekday[d.getDay()];	
+               			document.getElementById("myInput1").value =n1;	
+         if (d.getDay()==0){ document.getElementById("news").innerHTML = "Visiting doctors";} else {document.getElementById("news").innerHTML = "Visiting doctors on "+n1+" as per schedle";}		
+         				 
+         					
+               			// document.getElementById("news").innerHTML = "Visiting doctors as per schedle";	
+         				
+               		};
+               function hid() 	{
+               			//document.getElementById ("myTable").style.display = 'none';
+               			 var xx = document.getElementById("myTable");
+               			if (xx.style.display === "none") {
+               				xx.style.display = "block";
+               			} else {
+               				xx.style.display = "none";
+               			}
+               		};
+           
+                           
+               function myFunction() {
+               					var input, filter, table, tr, td, i;
+               					input = document.getElementById("myInput");
+               					filter = input.value.toUpperCase();
+               					table = document.getElementById("myTable");
+               					tr = table.getElementsByTagName("tr");
+               					for (i = 0; i < tr.length; i++) {
+               													  td = tr[i].getElementsByTagName("td")[1];
+               													  if (td) 	{
+               																if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+               																				  tr[i].style.display = "";
+               																				} else {
+               																						  tr[i].style.display = "none";
+               																						}
+               																} 	
+               													}
+               					// document.getElementById("myInput1").value = "All";
+               				};
+                           
+                           function myFunction1() 	{
+               						var input, filter, table, tr, td, i;
+               						input = document.getElementById("myInput1");
+               						
+               						filter = input.value.toUpperCase();
+               						table = document.getElementById("myTable");
+               						tr = table.getElementsByTagName("tr");
+               						for (i = 0; i < tr.length; i++) {
+               						  td = tr[i].getElementsByTagName("td")[0];
+               						  if (td) {
+               							if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+               							  tr[i].style.display = "";
+               							} else {
+               							  tr[i].style.display = "none";
+               							}
+               						  } 	
+               						}
+               					
+               						
+               					};
+                      
+               
+               
+            
+      </script>			   			   
+   </body>
+</html>
