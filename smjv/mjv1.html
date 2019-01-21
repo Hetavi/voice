@@ -114,12 +114,7 @@
           <img class="img-fluid" src="g.jpg" alt="Chania" width="320" height="45"> -->
       <div class="topnav" id="myTopnav" >
          <a class="navbar-brand" href="#">
-         <img src="g.jpg" alt="">
-         </a>
-         <a href="#home" class="active"> <input type="button"  value="Update" onclick="save_user();" /></a>
-         <a href="mjv2.html">   RESULT</a>
-         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-         <i class="fa fa-bars"></i>
+         <img class="img-fluid" src="log.jpg" width="320" alt="d">
          </a>
       </div>
       <img src="a.jpg"  width="11%" height="12%">   
@@ -163,7 +158,8 @@
          </div-->
       <table id="tbl_users_list"  class="table">
          <tr>
-            <td>Live Score  </td>
+            <td>  <input type="button"  value="Refresh" onclick="save_user();" /></td>
+			<td><a href="mjv2.html" class="active"> <input type="button"  value="Result"  /></a></td>
          </tr>
       </table>
       <p><small><i>Designed by MANIBHADRA DIGITAL PUBLICATIONs- An upcoming stratup by MJVIANS Dhruv Shah-9725551420</i></small></p>
@@ -179,7 +175,7 @@
       </script>
       <script>
          var tblUsers = document.getElementById('tbl_users_list');
-         var databaseRef = firebase.database().ref('users/').limitToLast(10);
+         var databaseRef = firebase.database().ref('users/').limitToLast(6);
          var rowIndex = 1;
          
          databaseRef.once('value', function(snapshot) {
